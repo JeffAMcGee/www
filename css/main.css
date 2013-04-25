@@ -19,14 +19,6 @@ body {
 
     background: #fff9e8;
     color: #111;
-/*
-background: -moz-linear-gradient(top, #cea014 0%, #fff9e8 25%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cea014), color-stop(25%,#fff9e8));
-background: -webkit-linear-gradient(top, #cea014 0%,#fff9e8 25%);
-background: -o-linear-gradient(top, #cea014 0%,#fff9e8 25%);
-background: -ms-linear-gradient(top, #cea014 0%,#fff9e8 25%);
-background: linear-gradient(to bottom, #cea014 0%,#fff9e8 25%);
-*/
 }
 
 .hero-unit {
@@ -43,12 +35,8 @@ background: linear-gradient(to bottom, #cea014 0%,#fff9e8 25%);
     -moz-border-radius: 0px;
     border-radius: 0px;
     border: none;
-    border-top: 10px solid #155186;
-    border-bottom: 10px solid #47198C;
-    /*
-    border-left: 1px solid #155186;
-    border-right: 1px solid #47198C;
-    */
+    border-top: 5px solid #155186;
+    border-bottom: 5px solid #47198C;
 
 }
 
