@@ -1,0 +1,82 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+    min-height: 100%;
+}
+
+body {
+    padding-top: 0px;
+    padding-bottom: 30px;
+
+    background: #fff9e8;
+    color: #111;
+/*
+background: -moz-linear-gradient(top, #cea014 0%, #fff9e8 25%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cea014), color-stop(25%,#fff9e8));
+background: -webkit-linear-gradient(top, #cea014 0%,#fff9e8 25%);
+background: -o-linear-gradient(top, #cea014 0%,#fff9e8 25%);
+background: -ms-linear-gradient(top, #cea014 0%,#fff9e8 25%);
+background: linear-gradient(to bottom, #cea014 0%,#fff9e8 25%);
+*/
+}
+
+.hero-unit {
+  padding-top:30px;
+}
+
+.well, .hero-unit {
+    background-color: #EBEBFF;
+    /*border: 1px solid #F5F2F4;*/
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border: none;
+    border-top: 10px solid #155186;
+    border-bottom: 10px solid #47198C;
+    /*
+    border-left: 1px solid #155186;
+    border-right: 1px solid #47198C;
+    */
+
+}
+
+.hero-unit h1, h2,h3 {
+    color: #00002B;
+}
+
+a {
+    color: #00002B;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #001528;
+    text-decoration: underline;
+}
+
+p.question {
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
