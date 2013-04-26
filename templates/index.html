@@ -2,10 +2,9 @@
 {% block content %}
 <section id="content">
 {% block content_title %}
-<h2>All articles</h2>
 {% endblock %}
 
-<ol id="post-list">
+<ul id="post-list">
 {% for article in articles_page.object_list %}
         <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
@@ -15,7 +14,7 @@
                 <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
         </article></li>
 {% endfor %}
-</ol><!-- /#posts-list -->
+</ul><!-- /#posts-list -->
 {% include 'pagination.html' %}
 </section><!-- /#content -->
 {% endblock content %}

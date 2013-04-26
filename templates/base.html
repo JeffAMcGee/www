@@ -55,29 +55,44 @@
         </div>
       </div>
       <div class="span4">
-        <div class="well">
 
-          Github: @<a href="http://github.com/jeffamcgee">JeffAMcGee</a><br />
-          Twitter: @<a href="http://twitter.com/jeffamcgee">JeffAMcGee</a><br />
-          Email: <i>[my screenname]</i><wbr>@gmail.com
-        </div>
         <div class="well">
-          <nav id="menu"><ul>
+          <nav id="menu">
           {% for title, link in MENUITEMS %}
               <li><a href="{{ link }}">{{ title }}</a></li>
           {% endfor %}
+          <p>Pages:</p>
           {% if DISPLAY_PAGES_ON_MENU %}
+            <ul>
             {% for p in PAGES %}
               <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
             {% endfor %}
-          {% else %}
-            {% if DISPLAY_CATEGORIES_ON_MENU %}
-              {% for cat, null in categories %}
-                <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-              {% endfor %}
-            {% endif %}
+            </ul>
           {% endif %}
-          </ul></nav><!-- /#menu -->
+          <p>Categories:</p>
+          {% if DISPLAY_CATEGORIES_ON_MENU %}
+            <ul>
+            {% for cat, null in categories %}
+              <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+          </nav><!-- /#menu -->
+        </div>
+
+        <div class="well">
+          <p>
+          <img class="profile" src="http://en.gravatar.com/avatar/f3e64d7e337eb79b66c7110ba5113f07?s=160" width="80" height="80" alt='my photo'/>
+          Howdy! I'm the proudest member of the Texas Aggie class of '05.  Once upon a time, I taught High School,
+          helped build <a href="https://snoball.com/KeriOnMars">Snoball</a>, and married
+          @<a href="http://twitter.com/KeriOnMars">KeriOnMars</a>. I'm currently living happily ever after and finishing
+          up a masters degree at Texas A&amp;M's <a href="http://infolab.tamu.edu">Infolab</a>.
+          </p>
+          <p>
+          Github: @<a href="http://github.com/jeffamcgee">JeffAMcGee</a><br />
+          Twitter: @<a href="http://twitter.com/jeffamcgee">JeffAMcGee</a><br />
+          Email: <i>[my screenname]</i><wbr>@gmail.com
+          </p>
         </div>
       </div>
     </div>
