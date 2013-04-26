@@ -1,29 +1,16 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-html {
-}
 
 body {
-    padding-top: 0px;
-    padding-bottom: 30px;
     font-family: "Open Sans", sans-serif;
-
     background: #FFFAEA;
     color: #000036;
 }
 
-.header, .span4, .span8 {
+.span4, .span8 {
     /* teal-blue-purple gradient */
-    background: #2468a5;
+    background: #3333b3;
     background: -moz-linear-gradient(left, #2468a5 0%, #3333b3 25%, #3333b3 75%, #5e29ad 100%);
     background: -webkit-gradient(linear, left top, right top, color-stop(0%,#2468a5), color-stop(25%,#3333b3), color-stop(75%,#3333b3), color-stop(100%,#5e29ad));
     background: -webkit-linear-gradient(left, #2468a5 0%,#3333b3 25%,#3333b3 75%,#5e29ad 100%);
@@ -41,19 +28,24 @@ h1 {
 .header {
     color: #FFFAEA;
     padding-bottom: .5em;
+    background: #3333b3;
+    border-bottom: 8px solid #A4A4FF;
+    width: 100%;
 }
 
-.header .container div {
+.header .container div, .footer div {
     padding-left: 19px;
 }
 
 .footer {
+    font-size: .8em;
     color: #393959;
+    background-color: white;
 }
 
-.body .container {
+.body.container {
     background-color: white;
-    padding-bottom: 10px;
+    padding-bottom: 10px; /* space for the gradient */
 }
 
 .well {

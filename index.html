@@ -31,43 +31,42 @@
     </div>
   </div>
 
-  <div class="body">
-    <div class="container">
-      <div class="row">
-        <div class="span8">
-          <div class="well">
-            <h2>Blah</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-          </div>
-        </div>
-        <div class="span4">
-          <div class="well">
-            JeffAMcGee
-          </div>
-          <div class="well">
-            Github: @<a href="http://github.com/jeffamcgee">JeffAMcGee</a><br />
-            Twitter: @<a href="http://twitter.com/jeffamcgee">JeffAMcGee</a><br />
-            Email: <i>[my screenname]</i><wbr>@gmail.com
-          </div>
+  <div class="body container">
+    <div class="row">
+      <div class="span8">
+        <div class="well">
+          <h2>Blah</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.</p>
         </div>
       </div>
-    </div> <!-- /container -->
-  </div>
+      <div class="span4">
+        <div class="well">
+          JeffAMcGee
+        </div>
+        <div class="well">
+          Github: @<a href="http://github.com/jeffamcgee">JeffAMcGee</a><br />
+          Twitter: @<a href="http://twitter.com/jeffamcgee">JeffAMcGee</a><br />
+          Email: <i>[my screenname]</i><wbr>@gmail.com
+        </div>
+      </div>
+    </div>
+  </div> <!-- /container -->
 
-  <div class="footer">
-    <div class="container">
-      <div class="well">
-          &copy; 2013 Jeffrey McGee
-      </div>
+  <div class="footer container">
+    <div>
+      &copy; 2013 Jeff McGee &mdash;
+      Content on this site is licensed under a <a rel="license"
+        href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution
+        License</a>. Sample code is placed in the public domain.
     </div>
   </div>
 
@@ -76,7 +75,17 @@
 
   <script src="js/vendor/bootstrap.min.js"></script>
 
-  <script src="js/main.js"></script>
+  <script>
+    /* FIXME: I really don't like using javascript to make the white area go to the bottom of the screen. */
+    var fixSize = function() {
+      var inner = $('.footer div').outerHeight();
+      var space = $(window).height()-($('.footer').position().top+inner);
+      if (space>0)
+          $('.footer').height(space+inner);
+    }
+    $(window).resize(fixSize);
+    $(window).ready(fixSize);
+  </script>
 
   <!--<script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
