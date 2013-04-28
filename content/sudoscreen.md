@@ -1,6 +1,6 @@
 Title: Running Screen in a Sudo Session
 Category: Tips
-Date: 2013-04-26
+Date: 2012-07-07
 
 If you use `sudo su` to become a different user, and then try to create a
 screen session for the new user, it gives this error message:
