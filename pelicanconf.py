@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Jeff McGee'
 SITENAME = u'JeffAMcGee'
 SITEURL = ''
-THEME = '.'
+THEME = 'theme'
 
 TIMEZONE = 'Europe/Paris'
 
