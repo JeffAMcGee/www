@@ -5,6 +5,7 @@ Date: 2013-01-23
 Ipython's PyLab breaks some uses of any(), all(), and other built-in functions.
 Here's a normal IPython shell:
 
+    :::python
     >ipython
     In [1]: all([x for x in [0,1,2]])
     Out[1]: False
@@ -17,6 +18,7 @@ Here's a normal IPython shell:
 
 And here's IPython with the pylab flag:
 
+    :::python
     >ipython --pylab
     In [1]: all([x for x in [0,1,2]])
     Out[1]: False

@@ -9,7 +9,7 @@
         <li><article class="hentry">
                 <header> <h2 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
                 <footer class="post-info">
-                    Posted {{ article.locale_date }}
+                  Posted on {{ article.locale_date }} in {{ article.category }}
                 </footer>
                 <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
         </article></li>

@@ -3,8 +3,8 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Jeff McGee'
-SITENAME = u'JeffAMcGee'
-SITEURL = ''
+SITENAME = u'Shared State'
+SITEURL = 'http://localhost:8000/'
 THEME = 'theme'
 
 TIMEZONE = 'Europe/Paris'

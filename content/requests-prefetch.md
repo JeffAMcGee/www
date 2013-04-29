@@ -22,8 +22,10 @@ this error message:
 
 You need to change the call that starts the streaming from something like this:
 
+    :::python
     r = requests.post('http://httpbin.org/stream/20', prefetch=False)
 
 to this:
 
+    :::python
     r = requests.post('http://httpbin.org/stream/20', stream=True)
