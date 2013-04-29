@@ -2,8 +2,10 @@ Title: Problems with prefetch in python requests
 Category: Tips
 Date: 2013-04-11
 
-Requests is a great library for making HTTP requests.  Requests made a slight
-change to its streaming API, so the old code results in this error message:
+Requests is a great library for making HTTP requests.  We're using it quite a
+bit in Infolab to talk to Twitter. Right before they released version 1.0,
+Requests made a slight change to its streaming API, so the old code results in
+this error message:
 
     Traceback (most recent call last):
       File "crawl.py", line 56, in <module>

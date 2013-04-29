@@ -1,8 +1,8 @@
-Title: IPython with PyLab Breaks Builtins like Any and All
+Title: IPython with PyLab Breaks Built-ins like any() and all()
 Category: Tips
 Date: 2013-01-23
 
-Ipython's Pylab breaks some uses of any(), all(), and other builtin functions.
+Ipython's PyLab breaks some uses of any(), all(), and other built-in functions.
 Here's a normal IPython shell:
 
     >ipython

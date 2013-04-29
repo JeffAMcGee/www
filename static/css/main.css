@@ -32,16 +32,17 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e29ad', endColorstr='#2468a5',GradientType=1 );
 }
 
-h1 {
-    font-weight: normal;
-}
-
 .header {
-    color: #FFFAEA;
     padding-bottom: .5em;
     background: #3333b3;
     border-bottom: 8px solid #A4A4FF;
     width: 100%;
+}
+
+.header h1 a, .header .subtitle {
+    font-weight: normal;
+    color: #FFFAEA;
+    text-decoration: none;
 }
 
 .header .container div, .footer div {
