@@ -139,13 +139,15 @@ and DOS batch file that ran all the tests.
 ## Results
 I think that making the project a bit more realistic helped with student
 motivation.
-more   
+The practical skills the students gained in this project will help them in
+their future careers.
 
 All of the homeworks were assigned during the first half of the course.
 During the second half of the course everyone worked on team projects.
 The teams put the code from their projects on GitHub so they could work
 together and we could see their progress.
-A few teams reused parts of their homework assignments in their final projects.
+Many of the teams reused things they had learned from the homeworks in their
+final projects.
 
 There are some exciting changes happening in higher education caused by rising
 tuition costs and the internet.
