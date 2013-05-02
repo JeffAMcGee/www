@@ -1,14 +1,18 @@
-Title: Using Git and Unittesting in a University Course
+Title: Using Git and Unittesting in a CS Course
 Category: General
 Date: 2012-12-15
 
 
 I was the TA for Texas A&amp;M's Information Retrieval class in 2012.
+We took some interesting directions with the homework assignments, so I'd like
+to spend some time talking about the experience for the benefit of other
+educators.
 The professor, Dr. Caverlee wanted change the existing set of homework
 assignments to bring in some web development by combining the existing
 homeworks into a small project.
 The students would build a small search engine with features like PageRank and
 clustering.
+
 <!--
 In my opinion, any computer science student that gets through their
 undergraduate curriculum without learning half a dozen languages is getting
@@ -30,7 +34,7 @@ practical tools is beneficial.
 
 On the first week of class, we gave the students a simple frontend to the
 search engine they would build&mdash;a single-page html application written in
-Javascript that talked to a simple JSON API.
+Javascript that talked to a simple json REST API.
 Over the course of the semester, the students built the backend of the search
 engine that searched over a corpus of ~1,000,000 Tweets posted during the
 landing of the Mars Science Laboratory (Curiosity).
@@ -42,13 +46,14 @@ To help people get started, we included bottle.py in the sample code, which
 meant that the first assignment could be done with a vanilla Python
 installation.
 For later assignments, they had to install and use several libraries including
-nosetests, numpy, and pymongo.
+Nosetests, Numpy, and PyMongo.
 
-<!--
-I could ask "What happens when you visit
+The class had a mailing list on Google Groups where people could post about the
+homework.
+When people were having problems I often asked them "What happens when you visit
 [http://localhost:8000/api/search?q=mars](http://localhost:8000/api/search?q=mars)
 in your browser?"
--->
+The rest api helped me figure out the problems people were having.
 
 ## Version Control
 
@@ -66,7 +71,7 @@ assigned, and the solution to homework 2 was posted:
 
     :::text
       * 8262870 (hw2sol) homework 2 official solution
-    * | fe0c370 (HEAD, master, hw3) homework 3 - pagerank
+    * | fe0c370 (HEAD, master, hw3) homework 3 - PageRank
     | * 0bfc1f3 Merge branch 'hw2' into hw2sol
     |/|
     | * e6cf0c8 (hw1sol) homework 1 official solution
@@ -83,7 +88,7 @@ But if someone did poorly on one assignment, it should not prevent them from
 doing the rest of the assignments.
 
 I tried to prevent merge conflicts by keeping my edits in one set of files and
-all the edits from students in seperate files.
+all the edits from students in separate files.
 For the most part, this worked; I only remember one email sent to the class
 mailing list about merge conflicts.
 
@@ -105,17 +110,24 @@ Asking them to do that was a mistake.
 About a third of the class did not `git add` the file.
 We had to ask everyone to send us that one file if `git status` said it was not
 committed.
-I should have added and commeted an empty file when I uploaded the original
+I should have added and commented an empty file when I uploaded the original
 homework.
 
 ## Unit Testing
-For the first four assignemnts, I gave the students a few simple test cases to
+For the first four assignments, I gave the students a few simple test cases to
 check that their code worked.
+The tests gave students quick feedback about their homework.
 When I graded the homeworks, I ran the student's programs against a much more
 thorough set of tests.
 (I also used `git diff` to look at exactly what the students had done.)
+
 In the final assignments, I made the students write their own tests to verify
 that their code was correct.
+The tests the students wrote were not as good as I had hoped.
+There were tests that read in 10,000 tweets to test one query, tests that
+didn't test anything, and tests that failed because of rounding errors.
+It may have helped to spend more time talking about testing philosophy on the
+mailing list or in the early assignments.
 
 I've used nosetests without problems on my projects in the past, but the
 students had quite a few problems running nosetests.
@@ -125,16 +137,23 @@ I wish I had not used nosetests, and instead gave everyone a short bash script
 and DOS batch file that ran all the tests.
 
 ## Results
-The 
+I think that making the project a bit more realistic helped with student
+motivation.
+more   
 
-During the second half 
-People reused parts of their homework assignments in their final projects.
+All of the homeworks were assigned during the first half of the course.
+During the second half of the course everyone worked on team projects.
+The teams put the code from their projects on GitHub so they could work
+together and we could see their progress.
+A few teams reused parts of their homework assignments in their final projects.
 
-
+There are some exciting changes happening in higher education caused by rising
+tuition costs and the internet.
 One of the most interesting developments are MOOCs, massively online open courses.
 I think source control and unit testing could work well for a MOOC.
-Soucre control allows advanced students to work on projects that are too big to
+Source control allows advanced students to work on projects that are too big to
 do in a simple web browser-based IDE.
-Unit tests could give students instant feedback as they are working on an assignment.
+Unit tests could give students instant feedback as they are working on an
+assignment.
 After they submit the assignment, the unit tests can augment other techniques
 like peer feedback.

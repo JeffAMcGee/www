@@ -87,14 +87,7 @@ a:visited {
     color: #5E29AD;
 }
 img.profile {
-    /*
-    float: left;
-    margin-right: 8px;*/
     display: block;
-    /*
-    border: 1px solid #ccc;
-    padding: 8px;
-    */
 }
 
 #post-list {
