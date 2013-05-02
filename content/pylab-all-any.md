@@ -2,8 +2,8 @@ Title: IPython with PyLab Breaks Built-ins like any() and all()
 Category: Tips
 Date: 2013-01-23
 
-Ipython's PyLab breaks some uses of any(), all(), and other built-in functions.
-Here's a normal IPython shell:
+Ipython's PyLab breaks some uses of any(), all(), and possibly other built-in
+functions.  Here's a normal IPython shell:
 
     :::python
     >ipython
@@ -43,3 +43,5 @@ returns True.
 
 According to one of the IPython developers, this is
 "[expected behavior](https://github.com/ipython/ipython/issues/2598)". Yay?
+A bug was filed and closed for [Python](http://bugs.python.org/issue11221) and
+[PyLab](https://github.com/matplotlib/matplotlib/issues/194)
