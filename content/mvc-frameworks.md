@@ -5,7 +5,7 @@ Date: 2013-5-2
 This is a rant about the state of libraries in Javascript.
 I recently built a small project in Node that shared code between the server
 and the client.
-One of the first steps was to pick the frontend framwork
+One of the first steps was to pick the frontend framework
 There were two things I was looking for: the ability to reuse code between the
 client and the server and automatically updating views.
 
@@ -38,7 +38,7 @@ Meteor looks like it could be great for hackathons and rapid prototyping, but
 I'm not sure if it lets you build maintainable apps.
 In particular, they have their own protocol for talking between the server and
 the client.
-I really like the seperation of concerns that restful http over json enforces.
+I really like the separation of concerns that restful http over json enforces.
 They also wrote their own package manager instead of using npm, and I wanted to
 get to know npm.
 I decided against meteor for this project.
@@ -48,7 +48,7 @@ I spent some time trying to use Ember in Node, and I found some Stack Overflow
 posts suggesting that this can't be done yet.
 Their documentation is great on the theory about how their system works, but it
 is really lacking in examples.
-Both Angualar and Knockout have much better tutorials.
+Both Angular and Knockout have much better tutorials.
 The Ember project has publicly said they are working on improving their
 tutorials.
 Ember is something I'd like to check up on in a few months.
@@ -56,8 +56,8 @@ Ember is something I'd like to check up on in a few months.
 * [Angular](http://angularjs.org/) - The new framework created by some people at Google.
 When I first looked into Angular, it looked like it wouldn't work with node.
 After using Angular on [another project](http://52weeks.jeffamcgee.com/), it
-looks like you can use plain old Javascript objects as models in Angualar.
-Someday I'd like to redo the demo in Angualar for comparison purposes.
+looks like you can use plain old Javascript objects as models in Angular.
+Someday I'd like to redo the demo in Angular for comparison purposes.
 
 * [Knockout](http://knockoutjs.com/) - I used the knockout library for this project.
 There is a npm package that lets you use knockout inside a node app.
@@ -68,10 +68,10 @@ My biggest gripe with knockout is that Knockout's models do not play nicely with
 You cannot put a `ko.observable` or a `ko.computed` on a prototype.
 
 And that's just the first choice I had to make.
-You see this same maze of twisty pasages every time you want to pick a new
+You see this same maze of twisty passages every time you want to pick a new
 library in Javascript.
 Everyone seems to have written their own testing library.
-I found eight npm packages for the jquery library, and most of them were
+I found eight npm packages for the JQuery library, and most of them were
 out-of-date.
 There are dozens of tools for minification and deployment.
 Even 10gen officially supports two different libraries for talking to MongoDB.

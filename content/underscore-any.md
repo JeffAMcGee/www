@@ -61,7 +61,7 @@ Next, as an optimization, they moved the check for the iterator out of the loop:
     if (result = iterator.call(context, value, index)) throw '__break__';
 
 They added the list to the parameters sent to the iterator. This makes it
-behave more like Javascript's official `Array.some`, and fixes issue
+behave more like JavaScript's official `Array.some`, and fixes issue
 [#2](https://github.com/documentcloud/underscore/issues/2).
 
     :::javascript
@@ -76,7 +76,7 @@ factored it out into a new method `_.breakLoop()`:
 Someone complained that when an exception was thrown in `_.each`'s iterator you
 would not see the full stack trace.
 Instead, the stack trace would end inside forEach's catch block.
-This is really a shortcoming of Javascript's exception handling: you can't
+This is really a shortcoming of JavaScript's exception handling: you can't
 catch specific types of exceptions.
 (Browser debuggers could also be improved to cleanly handle the case of an
 exception that gets rethrown in a catch block.)

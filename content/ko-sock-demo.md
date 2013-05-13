@@ -25,7 +25,7 @@ The demo program is a chess board with two black rooks that anyone visiting the
 site can move around.
 
 I will be using Express as backend website framework,
-Mongodb for the database,
+MongoDB for the database,
 Underscore for functional programming,
 Knockout as the MVC framework,
 Socket.io for real-time communication, and
@@ -39,7 +39,7 @@ Knockout, so I'm going to assume you've been through the tutorial for
 [Express](http://expressjs.com/guide.html) and
 [Knockout](http://learn.knockoutjs.com/#/?tutorial=intro).
 If you'd like to run the code, you should can grab the
-[source code](https://github.com/JeffAMcGee/ko-sock-demo) from Github.
+[source code](https://github.com/JeffAMcGee/ko-sock-demo) from GitHub.
 Disclaimer: I'm not an expert at node.js so there are probably things that
 could be done better.
 This was mostly an experiment to play with some new technologies.
@@ -95,7 +95,7 @@ We'll add the commands to run Browserify in serve.js so that it runs each time
 the development server starts up.
 (In production, you will want to have Browserify bundle and minify the
 Javascript as part of deployment.)
-This code tells browserify to combine main.js and all of its dependencies into bundle.js:
+This code tells Browserify to combine main.js and all of its dependencies into bundle.js:
 
     :::javascript
     var browserify = require('browserify');
@@ -197,7 +197,7 @@ If it is, then we send a message to all the clients to move the piece.
       }
     });
 
-All of the clients have code that recieves that message and moves the rooks:
+All of the clients have code that receives that message and moves the rooks:
 
     :::javascript
     socket.on('move', function (data) {
@@ -208,4 +208,4 @@ All of the clients have code that recieves that message and moves the rooks:
 And there you have it. A tiny chess board with logic shared between the client
 and server in Javascript.
 The full [source code](https://github.com/JeffAMcGee/ko-sock-demo) (with
-instructions) is on Github.
+instructions) is on GitHub.
