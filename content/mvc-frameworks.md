@@ -3,8 +3,7 @@ Category: General
 Date: 2013-5-2
 
 This is a rant about the state of libraries in Javascript.
-I recently built a
-[small project](/sharing-models-between-node-and-the-browser.html)
+I recently built a [small project](|filename|./ko-sock-demo.md).)
 in Node.js that shared JavaScript code between the server and the browser.
 One of the first steps was to pick the frontend framework
 There were two things I was looking for: the ability to reuse code between the

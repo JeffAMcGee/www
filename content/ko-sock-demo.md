@@ -31,7 +31,7 @@ Knockout as the MVC framework,
 Socket.io for real-time communication, and
 Browserify for bundling everything together and making CommonJS modules work in the browser.
 (I wrote in detail why I choose to use Knockout, but it got to be so long that
-I made it into a separate [post](/picking-libraries-in-javascript.html).)
+I made it into a separate [post](|filename|./mvc-frameworks.md).)
 
 ## Sharing Models
 I'm not going to go through all the details of developing for node.js and
