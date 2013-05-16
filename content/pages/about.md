@@ -7,6 +7,7 @@ It's mostly about technical stuff, but there might be something about cooking,
 dancing, or bicycling hidden in here.
 
 There are currently three types of posts on this site:
+
 * [General](/category/general.html) - posts about anything
 * [Tips](/category/tips.html) - short fixes to technical problems
 * [Projects](/category/projects.html) - open source projects I've done (with a
