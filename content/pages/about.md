@@ -17,16 +17,24 @@ I suppose I should add a little bit more about myself.
 Once upon a time, I taught High School math, science, and computer science.
 I loved teaching computer science, but teaching the other subjects wasn't as fun.
 Also, public schools are a mess.
+
 I've done some other cool things including being an early employee at
-[Snoball](https://snoball.com/).  I'm married to my favorite
-Martian, [@KeriOnMars](http://twitter.com/KeriOnMars).
+[Snoball](https://snoball.com/).
+They do microdonations based on events such as Foursquare Checkins, Facebook
+likes, and sports statistics.
+For example, you can use Snoball to automatically give $1 to your local food
+bank every time you check into a coffee shop on Foursquare.
+
 I just finished up a masters degree at Texas A&amp;M's [Infolab](http://infolab.tamu.edu).
 My master's thesis was on datamining Twitter to estimate the locations of users
 on Twitter given the locations of their friends.
 In other words, if you use Twitter, I know where you live.
 That's probably why I don't use [my Twitter account](http://twitter.com/jeffamcgee) much.
 
+I'm married to my favorite
+Martian, [@KeriOnMars](http://twitter.com/KeriOnMars).
 My wife and I love to cook. We've been participating in Reddit's
-[52 Weeks of Cooking](http://www.reddit.com/r/52weeksofcooking/).
+[52 Weeks of Cooking](http://www.reddit.com/r/52weeksofcooking/) for about a
+year and a half now.
 I have a [gallery](http://52weeks.jeffamcgee.com/#/user/aggieastronaut) (built
 with Bootstrap and AngularJS) with all of our entries to the challange.
