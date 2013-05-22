@@ -5,6 +5,7 @@ Thumbs.db
 *.swp
 docs/build
 *.pyc
+*.bak
 
 output
 *.pid
