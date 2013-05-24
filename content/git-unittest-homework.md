@@ -7,11 +7,10 @@ I was the TA for Texas A&amp;M's Information Retrieval class in 2012.
 We took some interesting directions with the homework assignments, so I'd like
 to spend some time talking about the experience for the benefit of other
 educators.
-The professor, Dr. Caverlee wanted change the existing set of homework
-assignments to bring in some web development by combining the existing
-homeworks into a small project.
-The students would build a small search engine with features like PageRank and
-clustering.
+The professor, Dr. Caverlee wanted to change the existing set of homework
+assignments to bring in some web development practices by combining the
+existing homeworks into a small project where the students would build a small
+search engine with features like PageRank and clustering.
 
 <!--
 In my opinion, any computer science student that gets through their
@@ -25,16 +24,17 @@ them will be getting a job in the computer industry within the next year.
 I suggested that we should bring in some industry practices into the class:
 version control, unit tests, and a NoSQL database.
 The class was always primarily about the computer science concepts in
-information retrieval. The software engineering techniques were brought in to
+information retrieval&mdash;the software engineering techniques were brought in to
 improve the course, but were never the main focus.
-Universities should not become technical schools, but adding in some
+I think that universities should not become technical schools, but adding in some
 practical tools is beneficial.
 
 ## The Project
 
 On the first week of class, we gave the students a simple frontend to the
-search engine they would build&mdash;a single-page html application written in
-Javascript that talked to a simple json REST API.
+search engine.
+It was a single-page html application written in Javascript that talked to a
+simple json REST API.
 Over the course of the semester, the students built the backend of the search
 engine that searched over a corpus of ~1,000,000 Tweets posted during the
 landing of the Mars Science Laboratory (Curiosity).
