@@ -34,7 +34,7 @@ templates for lots of things in the past.)
 * [Meteor](http://meteor.com/) - I watched the video and poked around on the
 tutorials, and I'm still not sure if I love it or I hate it.
 I realize it can be turned off, but typing `db.book.find({year:{$gt:2010}})`
-in the browser's console and getting back results from the MongoDB is crazy.
+in the browser's console and getting back results from MongoDB is crazy.
 Meteor looks like it could be great for hackathons and rapid prototyping, but
 I'm not sure if it lets you build maintainable apps.
 In particular, they have their own protocol for talking between the server and
