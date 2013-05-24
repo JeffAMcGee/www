@@ -1,14 +1,9 @@
-Title: Picking Libraries in Javascript
+Title: Picking MVC Frameworks in Javascript
 Category: General
 Date: 2013-5-2
 
-This is a rant about the state of libraries in Javascript.
-I recently built a [small project](|filename|./ko-sock-demo.md).)
-in Node.js that shared JavaScript code between the server and the browser.
-One of the first steps was to pick the frontend framework
-There were two things I was looking for: the ability to reuse code between the
-client and the server and automatically updating views.
-
+Lately, I've been looking into using Javascript for both client and server-side
+web development.
 Starting a project in Node.js today feels a lot like reading a
 Choose-Your-Own-Adventure book&mdash;every few minutes you have to choose
 between a few options, and it's not obvious which one is the optimal.
@@ -16,6 +11,12 @@ Javascript has exploded in recent years, and there's lots of new libraries
 springing up.
 Most these libraries have not been battle-tested like JQuery or D3 have.
 I'm sure the ecosystem will be much more mature in a year or two.
+
+I recently built a [small project](|filename|./ko-sock-demo.md).)
+in Node.js that shared JavaScript code between the server and the browser.
+One of the first steps was to pick the frontend framework
+There were two things I was looking for: the ability to reuse code between the
+client and the server and automatically updating views.
 
 Anyway, here are the MVC libraries I looked into:
 

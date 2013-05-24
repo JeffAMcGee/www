@@ -1,6 +1,6 @@
 Title: Finding Local Political Conversations on Twitter
 Category: Projects
-Date: 2013-03-21
+Date: 2013-05-22
 
 I think it would be cool to find local crowds of people discussing a topic
 online.

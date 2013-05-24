@@ -11,8 +11,9 @@ If an invalid number could lead to security issues or other bugs, you have to
 write the same code in Python to run on the server and verify the number.
 Modern web development is not DRY; it's WET: Write Everything Twice.
 
-I'm not entirely a fan of Javascript.
+<!--I'm not entirely a fan of Javascript.
 It's certainly not as ugly as PHP, but it's no Python.
+-->
 I've been playing with node.js lately.
 What originally attracted me to Node.js was the idea of sharing logic between
 the client and the server.
@@ -34,8 +35,9 @@ Browserify for bundling everything together and making CommonJS modules work in 
 I made it into a separate [post](|filename|./mvc-frameworks.md).)
 
 ## Sharing Models
-I'm not going to go through all the details of developing for node.js and
-Knockout, so I'm going to assume you've been through the tutorial for
+This is more of a proof-of-concept that a tutorial, so I'm not going to go
+through all the details of developing for node.js and
+Knockout; I'm going to assume you've been through the tutorial for
 [Express](http://expressjs.com/guide.html) and
 [Knockout](http://learn.knockoutjs.com/#/?tutorial=intro).
 If you'd like to run the code, you should can grab the
@@ -46,9 +48,10 @@ This was mostly an experiment to play with some new technologies.
 
 As I said previously, I'm going to build a simple chess board with two rooks.
 So let's start out with the goal, and build everything around that:
+
 * We want Javascript objects that work in both a browser and in Node.
-* We want the fields in the object to be knockout observables.
-* We want a function that can determine if a chess move is valid.
+* The fields in the objects should be knockout observables.
+* The chess pieces need a method that can determine if a chess move is valid.
 
 Let's do this by making two models: one to represent the game, and another to
 represent each piece.
@@ -84,9 +87,11 @@ represent each piece.
     };
 
 You should notice that this is a CommonJS module&mdash;it looks like code for
-Node.js&mdash;it uses `require()` to import Knockout, and `module.exports` to
+Node.js.
+This module uses `require()` to import Knockout, and `module.exports` to
 export `GameModel` and `PieceModel`.
-Node expects code to be in CommonJS modules, but CommonJS is not a good format for a web browser.
+Node expects code to be in CommonJS modules, but CommonJS is not a good format
+for a web browser because require loads modules synchronously.
 We'll look at that fixing that next.
 
 Browserify is a tool that will combine a bunch of CommonJS modules into a
@@ -95,7 +100,8 @@ We'll add the commands to run Browserify in serve.js so that it runs each time
 the development server starts up.
 (In production, you will want to have Browserify bundle and minify the
 Javascript as part of deployment.)
-This code tells Browserify to combine main.js and all of its dependencies into bundle.js:
+The code below tells Browserify to combine main.js and all of its dependencies
+into one file, bundle.js:
 
     :::javascript
     var browserify = require('browserify');
@@ -208,4 +214,4 @@ All of the clients have code that receives that message and moves the rooks:
 And there you have it. A tiny chess board with logic shared between the client
 and server in Javascript.
 The full [source code](https://github.com/JeffAMcGee/ko-sock-demo) (with
-instructions) is on GitHub.
+installation instructions) is on GitHub.
