@@ -7,6 +7,8 @@ SITENAME = u'Shared State'
 SITEURL = 'http://localhost:8000/'
 THEME = 'theme'
 
+PATH = 'content'
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
@@ -16,6 +18,8 @@ FEED_ALL_ATOM = None
 FEED_ALL_RSS = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS =  ()
